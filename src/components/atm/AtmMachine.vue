@@ -30,7 +30,6 @@ onMounted(() => {
     bounds: document.body,
     inertia: true,
     edgeResistance: 0.65,
-    type: 'x, y',
     onDrag: function() {
       const rotation = Math.round((this.y / window.innerHeight) * 100);
       gsap.set(creditCard.value, { rotationY: rotation });
