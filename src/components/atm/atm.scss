@@ -125,7 +125,7 @@ h1 {
 $glitchSteps: 20;
 @keyframes noise-anim {
   @for $i from 0 through $glitchSteps {
-    #{percentage($i * (1/$glitchSteps) )} {
+    #{percentage($i * calc(1 / $glitchSteps) )} {
       clip: rect(random(100)+px, 9999px, random(100)+px, 0);
     }
   }
